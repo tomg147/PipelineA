@@ -43,8 +43,6 @@ public class Course {
             return modules;
     }
     
-    
-    
     public void addModules(Module module){
         modules.add(module);
     }
@@ -62,7 +60,7 @@ public class Course {
         String str = "Name: " + name +"\n" 
                     + "Starts: " + getStartDate() + "\n" 
                     + "Ends: " + getEndDate() + "\n"
-                    + "Modules: " + getModules();
+                    + "Modules: "+ "\n" + getModules();
         return str;
     }
     

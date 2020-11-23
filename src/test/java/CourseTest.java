@@ -21,8 +21,8 @@ public class CourseTest {
 	public void setUp() throws Exception {
 		student1 = new Student("BobMarley", 22, "01-01-98", 12345678);
 		student2 = new Student("KeithRichards", 21, "03-03-99", 87654321);
-		module1 = new Module("CT417");
-                module2 = new Module("CT418");
+		module1 = new Module("Software Engineering 3", "CT417");
+                module2 = new Module("Machine Learning", "CT418");
 		course1 = new Course("4BP", new DateTime("2016-09-01T00:00:00Z"), new DateTime("2020-06-31T00:00:00Z"));
 	}
         
@@ -43,8 +43,8 @@ public class CourseTest {
 	public void testCourseModules() {
 		course1.addModules(module1);
                 course1.addModules(module2);
-                Module testModule1 = new Module("CT417");
-                Module testModule2 = new Module("CT418");
+                Module testModule1 = new Module("Software Engineering 3", "CT417");
+                Module testModule2 = new Module("Machine Learning", "CT418");
 		List<Module> testModules = new ArrayList<Module>();
                 testModules.add(testModule1);
                 testModules.add(testModule2);

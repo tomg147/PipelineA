@@ -23,7 +23,7 @@ public class ModuleTest {
 	public void setUp() throws Exception {
 		student1 = new Student("BobMarley", 22, "01-01-98", 12345678);
 		student2 = new Student("KeithRichards", 21, "03-03-99", 87654321);
-		module1 = new Module("CT417");		
+		module1 = new Module("Software Engineering 3", "CT417");		
 		course1 = new Course("4BP", new DateTime("2016-09-01T00:00:00Z"), new DateTime("2020-06-31T00:00:00Z"));
 		course2 = new Course("3BP", new DateTime("2015-08-01T00:00:00Z"), new DateTime("2021-07-1T00:00:00Z"));
 	}

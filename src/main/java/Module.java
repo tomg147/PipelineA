@@ -9,13 +9,14 @@ import java.util.ArrayList;
 
 public class Module {
     private String moduleName;
-    private int moduleId;
+    private String moduleId;
     private List<Student> students;
     private List<Course> listCourses;
 
     
-    public Module(String name){
+    public Module(String name, String iD){
         this.moduleName = name;
+        moduleId = iD;
         this.students = new ArrayList<Student>();
         this.listCourses = new ArrayList<Course>();
        
@@ -29,11 +30,11 @@ public class Module {
         moduleName = n;
     }
     
-    public int getId(){
+    public String getId(){
             return moduleId;
     }
     
-    public void setId(int id){
+    public void setId(String id){
         moduleId = id;
     }
     

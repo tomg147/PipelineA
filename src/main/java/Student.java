@@ -98,7 +98,7 @@ public class Student {
                     "Age: " + getAge() +"\n" + 
                     "DOB: " + getDob() + "\n" + 
                     "ID: " + getId() + "\n" +  
-                    "Modules: " + getArrayListModules() +
+                    "Modules: " + getArrayListModules() + "\n" +
                     "Course: " + getCourse() + "\n";
         return str;
     }
