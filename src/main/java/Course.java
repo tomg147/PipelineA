@@ -43,6 +43,8 @@ public class Course {
             return modules;
     }
     
+    
+    
     public void addModules(Module module){
         modules.add(module);
     }
@@ -57,8 +59,10 @@ public class Course {
     
     @Override
     public String toString(){
-        String str = "Name: " + name + "\n" + "Modules: " + getModules() +"\n" 
-                + "Students: " + getListStudents() + "\n" + "Starts: " + getStartDate() + "Ends: " + getEndDate();
+        String str = "Name: " + name +"\n" 
+                    + "Starts: " + getStartDate() + "\n" 
+                    + "Ends: " + getEndDate() + "\n"
+                    + "Modules: " + getModules();
         return str;
     }
     

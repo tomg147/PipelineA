@@ -57,8 +57,7 @@ public class Module {
     
     @Override
     public String toString(){
-        String str = "Name: " + moduleName + "\n" + "ID:  " + getId() + "\n"+ "Courses: " + getListCourse() +"\n" 
-                + "Students: " + getListStudents();
+        String str = "Name: " + moduleName + "\n" + "ID:  " + getId();
         return str;
     }
 }

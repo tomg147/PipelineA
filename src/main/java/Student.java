@@ -16,6 +16,7 @@ public class Student {
     private int id;
     private Course course;
     private List<Module> modules;
+    private ArrayList<Module> m;
 
     
     public Student(String name, int age, String dob, int id){
@@ -24,6 +25,7 @@ public class Student {
         this.dob = dob;
         this.id = id;
         modules = new ArrayList<Module>();
+        m = new ArrayList<Module>();
         
         
         }
@@ -80,6 +82,10 @@ public class Student {
             return modules;
     }
     
+    public ArrayList<Module> getArrayListModules(){
+        return m;
+    }
+    
     
     public void addModules(Module module){
         modules.add(module);
@@ -87,8 +93,13 @@ public class Student {
     
     @Override
     public String toString(){
-        String str = "Username: " + getUsername() + "\n" + "Name: " + name + "\n" + "Age: " + getAge() +"\n" + "DOB: " + getDob() + "\n" + "ID: " + getId() + "\n" 
-                + "Course: " + getCourse() + "\n" + "Modules: " + getModules();
+        String str = "Username: " + getUsername() + "\n" + 
+                    "Name: " + name + "\n" + 
+                    "Age: " + getAge() +"\n" + 
+                    "DOB: " + getDob() + "\n" + 
+                    "ID: " + getId() + "\n" +  
+                    "Modules: " + getArrayListModules() +
+                    "Course: " + getCourse() + "\n";
         return str;
     }
     
